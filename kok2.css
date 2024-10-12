@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --main-color:#dfeaa8  ;
+    --sub-color:#1c252f ;
+    --black:#020202;
+    --text:#f9f9f9;
+    --border: 1px solid #fff;
+}
+
+*{
+    font-family: 'Kulim Park', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform:capitalize ;
+    transition: .2s linear;
+}
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .7rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--black);
+    border-radius: 5rem;
+}
+body{
+    background-color: var(--main-color);
+}
+section{
+    padding-top: 10rem;
+}
+.header{
+    min-height: 100vh;
+    background: url('images/work1.jpg') no-repeat;
+    background-position: center;
+    background-size:cover ;
+    
+}
+.header .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5rem 7% ;
+    position: static;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+.header .logo h1{
+    color: var(--text);
+
+}
+.header .navbar a{
+    font-size: 1.5rem;
+    color: var(--text);
+    padding: 2.5rem;
+
+}
+.header .navbar a:hover{
+    border-bottom: var(--border);
+
+}
+
+.header .donate a{
+    font-size: 1.3rem;;
+    color: var(--text);
+    border: var(--border);
+    border-radius: 20px;
+    padding: 1rem;
+
+
+    
+}
+.header .content{
+    color: var(--text);
+    margin-top: 10rem;
+    line-height: 1.8;
+    text-align: center;
+    
+}
+
+.header .content h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    
+
+}
+.header .content p{
+    color: #ccc;
+    font-size: 1.2rem;
+    text-transform:none ;
+    padding: 5rem;
+
+}
+.mission .wrapper{
+    display: flex;
+    flex: wrap;
+    gap: 5rem;
+}
+.mission .wrapper .content{
+    text-align: end;
+    line-height: 3.0;
+
+}
+.mission .wrapper .content h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding-right: 5rem;
+    
+
+}
+.mission .wrapper .content p{
+    font-size: 1.5rem;
+    text-transform:none ;
+    padding: 5rem;
+
+
+}
+.vision .wrapper{
+    display: flex;
+    flex: wrap;
+    gap: 5rem;
+
+}
+.vision .wrapper .content{
+    line-height: 2.0;
+
+
+}
+.vision .wrapper .content h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding-left: 5rem;
+    
+
+}
+.vision .wrapper .content p{
+    font-size: 1.5rem;
+    text-transform:none ;
+    padding: 5rem;
+}
+.impact .wrapper{  
+    background-color: var(--black);
+    color: var(--text);
+    
+}
+.impact .heading h3{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    
+}
+.impact .box-container{
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    gap: 10rem;
+}
+.impact .box-container .box{
+    padding: 5rem;
+    text-align: center;
+}
+.impact .box-container .box h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+
+}
+.impact .box-container .box p{
+    font-size: 1rem;
+    color: #929090;
+
+}
+.start .wrapper{
+    display: flex;
+    flex: wrap;
+    gap: 5rem;
+}
+.start .wrapper .content{
+    line-height: 2.5;
+    text-align: end;
+
+
+}
+.start .wrapper .content h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding-right: 5rem;
+    
+
+}
+.start .wrapper .content p{
+    font-size: 1.5rem;
+    text-transform: none;
+    padding: 5rem;
+
+
+}
+.ends{
+    padding-top: 2rem;
+    
+}
+.ends .wrapper{
+    position: absolute;
+    width: 100%;
+}
+.ends .box-container{
+    display: flex;
+    flex: wrap;
+    gap: 20rem;
+    justify-content: center;
+    background-color: var(--black);
+    color: var(--text);
+    padding: 5rem 5rem;
+}
+.ends .box-container .box{
+    line-height: 2;
+    margin-top: 7rem;
+
+}
+.ends .box-container .box h1{
+    font-size: 3rem;
+    font-weight: 800;
+
+}
+.ends .box-container .box h3{
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.ends .box-container .box p{
+    color: #ccc;
+}
+.ends .wrapper .change {
+    position: relative;
+    top: 150px;
+    left: 20%;
+    margin: 5rem;
+    padding: 5rem;
+    width: 50%;
+    border: 2px solid #000;
+    background-color: var(--sub-color);
+    color: var(--text);
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+}
+.ends .wrapper .change p{
+    font-size: 2rem;
+}
+.ends .box-container .rights{
+    margin-top: 230px;
+    color: #929090;
+  }
